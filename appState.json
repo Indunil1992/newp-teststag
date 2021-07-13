@@ -34,12 +34,37 @@
         "children": [],
         "isRemovable": true,
         "filePath": "package.json"
+      },
+      "736e1a24-ebab-4498-82bd-f9634c9b3960": {
+        "id": "736e1a24-ebab-4498-82bd-f9634c9b3960",
+        "parent": null,
+        "name": "newFF10.js",
+        "type": "JS_LAMBDA",
+        "isDirectory": false,
+        "children": [],
+        "isRemovable": true,
+        "filePath": "newFF10.js",
+        "cursor": {
+          "lineNumber": 1,
+          "column": 1
+        },
+        "config": {
+          "runtime": "nodejs14.x",
+          "handler": "handler",
+          "timeout": 60,
+          "memory": 128,
+          "layers": [],
+          "name": "newFF10"
+        },
+        "triggers": [],
+        "lastUpdated": 1626159764244
       }
     },
     "openFiles": [
-      "a217630c-1b60-4e67-8e03-d6134e085a38"
+      "a217630c-1b60-4e67-8e03-d6134e085a38",
+      "736e1a24-ebab-4498-82bd-f9634c9b3960"
     ],
-    "currentFileId": "a217630c-1b60-4e67-8e03-d6134e085a38",
+    "currentFileId": "736e1a24-ebab-4498-82bd-f9634c9b3960",
     "resources": {
       "s3induuuu": {
         "name": "s3induuuu",
@@ -49,6 +74,26 @@
           "bucket": {
             "name": "induuuu"
           }
+        }
+      },
+      "sqsindunilMessageQueue": {
+        "name": "sqsindunilMessageQueue",
+        "type": "SQS",
+        "config": {
+          "mode": 1,
+          "existing": true,
+          "name": "indunil-message-queue",
+          "url": "https://sqs.us-east-1.amazonaws.com/318300609668/indunil-message-queue",
+          "deliveryDelay": "0",
+          "deliveryDelayUnit": "seconds",
+          "queueType": "standardQueue",
+          "defaultVisibilityTimeout": "30",
+          "defaultVisibilityTimeoutUnit": "seconds",
+          "messageRetentionPeriod": "345600",
+          "messageRetentionPeriodUnit": "seconds",
+          "maximumMessageSize": 256,
+          "receiveMessageWaitTime": "0",
+          "queueARN": "arn:aws:sqs:us-east-1:318300609668:indunil-message-queue"
         }
       }
     },
@@ -89,7 +134,7 @@
     "platform": "AWS",
     "language": "nodejs",
     "platformRegions": {},
-    "lastSave": 1626159701213
+    "lastSave": 1626159777112
   },
   "VCS_STATE": {
     "provider": "GitHub",
